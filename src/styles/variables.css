@@ -1,0 +1,89 @@
+/* ─────────────────────────────────────────
+   Design Tokens — Vitrine de Trufas
+   ───────────────────────────────────────── */
+:root {
+  --color-bg-primary: #0f0a06;
+  --color-bg-secondary: #1a1108;
+  --color-bg-card: #1e1510;
+  --color-bg-card-hover: #261c13;
+  --color-bg-glass: rgba(30, 21, 16, 0.85);
+
+  --color-brown-50: #fdf6ec;
+  --color-brown-100: #f5e6cc;
+  --color-brown-200: #e8c99a;
+  --color-brown-300: #d4a96a;
+  --color-brown-400: #c4893d;
+  --color-brown-500: #a36b22;
+  --color-brown-600: #7c4f18;
+  --color-brown-700: #5a3810;
+  --color-brown-800: #3d2509;
+  --color-brown-900: #1e1007;
+
+  --color-gold-light: #f5d06e;
+  --color-gold: #d4a843;
+  --color-gold-dark: #a07830;
+
+  --color-text-primary: #f5e6cc;
+  --color-text-secondary: #c4a882;
+  --color-text-muted: #7a6244;
+  --color-text-inverse: #0f0a06;
+
+  --color-available: #4caf6e;
+  --color-available-bg: rgba(76, 175, 110, 0.12);
+  --color-unavailable: #e05252;
+  --color-unavailable-bg: rgba(224, 82, 82, 0.12);
+  --color-coming-soon: #d4a843;
+  --color-coming-soon-bg: rgba(212, 168, 67, 0.12);
+
+  --color-border: rgba(212, 168, 67, 0.15);
+  --color-border-hover: rgba(212, 168, 67, 0.4);
+  --color-border-focus: rgba(212, 168, 67, 0.7);
+
+  --color-sidebar-bg: #100b06;
+  --color-sidebar-border: rgba(212, 168, 67, 0.1);
+
+  --color-danger: #e05252;
+  --color-danger-bg: rgba(224, 82, 82, 0.1);
+  --color-success: #4caf6e;
+  --color-success-bg: rgba(76, 175, 110, 0.1);
+
+  --gradient-gold: linear-gradient(135deg, #d4a843, #f5d06e, #a07830);
+  --gradient-hero: radial-gradient(ellipse at top, #261c13 0%, #0f0a06 70%);
+  --gradient-card: linear-gradient(145deg, rgba(212,168,67,0.06) 0%, rgba(30,21,16,0) 100%);
+  --gradient-sidebar: linear-gradient(180deg, #100b06 0%, #0f0a06 100%);
+
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.5);
+  --shadow-card-hover: 0 8px 40px rgba(0,0,0,0.7), 0 0 0 1px rgba(212,168,67,0.25);
+  --shadow-gold: 0 0 24px rgba(212, 168, 67, 0.35);
+  --shadow-modal: 0 20px 60px rgba(0, 0, 0, 0.8);
+  --shadow-btn: 0 4px 16px rgba(212, 168, 67, 0.3);
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+  --transition-spring: 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --sidebar-width: 260px;
+  --header-height: 72px;
+}

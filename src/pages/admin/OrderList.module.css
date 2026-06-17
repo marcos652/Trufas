@@ -1,0 +1,238 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  color: var(--color-gold);
+}
+
+.searchBar {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+}
+
+.searchIcon {
+  position: absolute;
+  left: var(--space-3);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text-muted);
+}
+
+.searchBar input {
+  padding-left: var(--space-10);
+  background: var(--color-bg-card);
+}
+
+.tabs {
+  display: flex;
+  gap: var(--space-2);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: var(--space-2);
+  overflow-x: auto;
+}
+
+.tab {
+  padding: var(--space-2) var(--space-4);
+  color: var(--color-text-muted);
+  font-weight: 500;
+  border-radius: var(--radius-full);
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.tab:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--color-text-primary);
+}
+
+.activeTab {
+  background: rgba(212, 168, 67, 0.15);
+  color: var(--color-gold);
+}
+
+.orderGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--space-5);
+}
+
+.orderCard {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  box-shadow: var(--shadow-card);
+}
+
+.orderHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: var(--space-3);
+}
+
+.customerName {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.customerPhone {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+}
+
+.statusBadge {
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badgePending {
+  background: rgba(212, 168, 67, 0.2);
+  color: var(--color-gold);
+  border: 1px solid rgba(212, 168, 67, 0.3);
+}
+
+.badgeCompleted {
+  background: rgba(76, 175, 110, 0.2);
+  color: #4CAF50;
+  border: 1px solid rgba(76, 175, 110, 0.3);
+}
+
+.badgeCancelled {
+  background: rgba(224, 82, 82, 0.2);
+  color: var(--color-danger);
+  border: 1px solid rgba(224, 82, 82, 0.3);
+}
+
+.orderItems {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  flex: 1;
+}
+
+.orderItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: 0.9rem;
+}
+
+.itemQuantity {
+  font-weight: 600;
+  color: var(--color-text-muted);
+  min-width: 2ch;
+}
+
+.itemName {
+  flex: 1;
+  color: var(--color-text-secondary);
+}
+
+.itemPrice {
+  color: var(--color-gold);
+  font-weight: 500;
+}
+
+.orderFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-top: 1px dashed var(--color-border);
+  padding-top: var(--space-3);
+}
+
+.date {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-1);
+}
+
+.total {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-gold);
+}
+
+.actions {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.btnComplete {
+  color: #4CAF50;
+  padding: var(--space-2);
+  border-radius: 50%;
+  transition: background var(--transition-fast);
+}
+
+.btnComplete:hover {
+  background: rgba(76, 175, 110, 0.15);
+}
+
+.btnCancel {
+  color: var(--color-danger);
+  padding: var(--space-2);
+  border-radius: 50%;
+  transition: background var(--transition-fast);
+}
+
+.btnCancel:hover {
+  background: rgba(224, 82, 82, 0.15);
+}
+
+.btnWhatsapp {
+  color: #25D366; /* WhatsApp brand color */
+  padding: var(--space-2);
+  border-radius: 50%;
+  transition: background var(--transition-fast);
+}
+
+.btnWhatsapp:hover {
+  background: rgba(37, 211, 102, 0.15);
+}
+
+.loadingState, .emptyState, .errorState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-12) 0;
+  color: var(--color-text-muted);
+  gap: var(--space-4);
+  text-align: center;
+}
+
+.spinning {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

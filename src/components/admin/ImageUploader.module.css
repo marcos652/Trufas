@@ -1,0 +1,113 @@
+.wrapper { display: flex; flex-direction: column; gap: var(--space-2); }
+
+.dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  padding: var(--space-10);
+  background: rgba(255, 255, 255, 0.02);
+  border: 2px dashed var(--color-border);
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  text-align: center;
+}
+
+.dropzone:hover {
+  border-color: var(--color-gold);
+  background: rgba(212, 168, 67, 0.04);
+}
+
+.dropzone.dragOver {
+  border-color: var(--color-gold);
+  background: rgba(212, 168, 67, 0.08);
+  transform: scale(1.01);
+}
+
+.dropzone.hasError {
+  border-color: var(--color-danger);
+}
+
+.dropIcon { color: var(--color-text-muted); }
+.dropzone:hover .dropIcon { color: var(--color-gold); }
+
+.dropText {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+}
+
+.dropText span {
+  color: var(--color-gold);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.dropHint {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+/* ── Preview */
+.preview {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  background: var(--color-brown-900);
+}
+
+.previewImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.removeBtn {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+  width: 32px;
+  height: 32px;
+  background: rgba(15, 10, 6, 0.85);
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-danger);
+  transition: all var(--transition-fast);
+}
+
+.removeBtn:hover {
+  background: var(--color-danger);
+  color: white;
+  border-color: var(--color-danger);
+}
+
+.changeBtn {
+  position: absolute;
+  bottom: var(--space-3);
+  right: var(--space-3);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  background: rgba(15, 10, 6, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  transition: all var(--transition-fast);
+}
+
+.changeBtn:hover {
+  color: var(--color-gold);
+  border-color: var(--color-border-hover);
+}
+
+.hiddenInput { display: none; }
