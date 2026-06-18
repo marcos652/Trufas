@@ -8,6 +8,7 @@ import { FilterBar } from '../components/storefront/FilterBar';
 import { TruffleCard } from '../components/storefront/TruffleCard';
 import { ComingSoonCard } from '../components/storefront/ComingSoonCard';
 import { CartSidebar } from '../components/storefront/CartSidebar';
+import { ThemeToggle } from '../components/ui/ThemeToggle';
 import { useCart } from '../context/CartContext';
 import type { TruffleCategory } from '../types';
 import styles from './StoreFront.module.css';
@@ -42,11 +43,14 @@ export function StoreFront() {
 
   return (
     <div className={styles.page}>
-      {/* Admin link */}
-      <Link to="/admin" className={styles.adminLink} title="Painel Administrativo">
-        <Settings size={16} />
-        <span>Admin</span>
-      </Link>
+      {/* Header Actions */}
+      <div className={styles.headerActions}>
+        <ThemeToggle />
+        <Link to="/admin" className={styles.adminLink} title="Painel Administrativo">
+          <Settings size={16} />
+          <span>Admin</span>
+        </Link>
+      </div>
 
       <HeroSection />
 

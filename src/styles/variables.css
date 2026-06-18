@@ -2,11 +2,12 @@
    Design Tokens — Vitrine de Trufas
    ───────────────────────────────────────── */
 :root {
-  --color-bg-primary: #0f0a06;
-  --color-bg-secondary: #1a1108;
-  --color-bg-card: #1e1510;
-  --color-bg-card-hover: #261c13;
-  --color-bg-glass: rgba(30, 21, 16, 0.85);
+  /* LIGHT THEME (Default) */
+  --color-bg-primary: #faf6f0;
+  --color-bg-secondary: #f0e9df;
+  --color-bg-card: #ffffff;
+  --color-bg-card-hover: #fdfaf5;
+  --color-bg-glass: rgba(255, 255, 255, 0.85);
 
   --color-brown-50: #fdf6ec;
   --color-brown-100: #f5e6cc;
@@ -23,10 +24,10 @@
   --color-gold: #d4a843;
   --color-gold-dark: #a07830;
 
-  --color-text-primary: #f5e6cc;
-  --color-text-secondary: #c4a882;
-  --color-text-muted: #7a6244;
-  --color-text-inverse: #0f0a06;
+  --color-text-primary: #3d2509;
+  --color-text-secondary: #5a3810;
+  --color-text-muted: #7c4f18;
+  --color-text-inverse: #ffffff;
 
   --color-available: #4caf6e;
   --color-available-bg: rgba(76, 175, 110, 0.12);
@@ -35,12 +36,12 @@
   --color-coming-soon: #d4a843;
   --color-coming-soon-bg: rgba(212, 168, 67, 0.12);
 
-  --color-border: rgba(212, 168, 67, 0.15);
-  --color-border-hover: rgba(212, 168, 67, 0.4);
-  --color-border-focus: rgba(212, 168, 67, 0.7);
+  --color-border: rgba(212, 168, 67, 0.3);
+  --color-border-hover: rgba(212, 168, 67, 0.6);
+  --color-border-focus: rgba(212, 168, 67, 1);
 
-  --color-sidebar-bg: #100b06;
-  --color-sidebar-border: rgba(212, 168, 67, 0.1);
+  --color-sidebar-bg: #faf6f0;
+  --color-sidebar-border: rgba(212, 168, 67, 0.2);
 
   --color-danger: #e05252;
   --color-danger-bg: rgba(224, 82, 82, 0.1);
@@ -48,14 +49,14 @@
   --color-success-bg: rgba(76, 175, 110, 0.1);
 
   --gradient-gold: linear-gradient(135deg, #d4a843, #f5d06e, #a07830);
-  --gradient-hero: radial-gradient(ellipse at top, #261c13 0%, #0f0a06 70%);
-  --gradient-card: linear-gradient(145deg, rgba(212,168,67,0.06) 0%, rgba(30,21,16,0) 100%);
-  --gradient-sidebar: linear-gradient(180deg, #100b06 0%, #0f0a06 100%);
+  --gradient-hero: radial-gradient(ellipse at top, #fdfaf5 0%, #faf6f0 70%);
+  --gradient-card: linear-gradient(145deg, rgba(212,168,67,0.08) 0%, rgba(255,255,255,0) 100%);
+  --gradient-sidebar: linear-gradient(180deg, #f0e9df 0%, #faf6f0 100%);
 
-  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.5);
-  --shadow-card-hover: 0 8px 40px rgba(0,0,0,0.7), 0 0 0 1px rgba(212,168,67,0.25);
+  --shadow-card: 0 4px 24px rgba(61, 37, 9, 0.08);
+  --shadow-card-hover: 0 8px 32px rgba(61, 37, 9, 0.12), 0 0 0 1px rgba(212,168,67,0.4);
   --shadow-gold: 0 0 24px rgba(212, 168, 67, 0.35);
-  --shadow-modal: 0 20px 60px rgba(0, 0, 0, 0.8);
+  --shadow-modal: 0 20px 60px rgba(61, 37, 9, 0.15);
   --shadow-btn: 0 4px 16px rgba(212, 168, 67, 0.3);
 
   --font-display: 'Playfair Display', Georgia, serif;
@@ -86,4 +87,32 @@
 
   --sidebar-width: 260px;
   --header-height: 72px;
+}
+
+[data-theme='dark'] {
+  --color-bg-primary: #0f0a06;
+  --color-bg-secondary: #1a1108;
+  --color-bg-card: #1e1510;
+  --color-bg-card-hover: #261c13;
+  --color-bg-glass: rgba(30, 21, 16, 0.85);
+
+  --color-text-primary: #f5e6cc;
+  --color-text-secondary: #c4a882;
+  --color-text-muted: #7a6244;
+  --color-text-inverse: #0f0a06;
+
+  --color-border: rgba(212, 168, 67, 0.15);
+  --color-border-hover: rgba(212, 168, 67, 0.4);
+  --color-border-focus: rgba(212, 168, 67, 0.7);
+
+  --color-sidebar-bg: #100b06;
+  --color-sidebar-border: rgba(212, 168, 67, 0.1);
+
+  --gradient-hero: radial-gradient(ellipse at top, #261c13 0%, #0f0a06 70%);
+  --gradient-card: linear-gradient(145deg, rgba(212,168,67,0.06) 0%, rgba(30,21,16,0) 100%);
+  --gradient-sidebar: linear-gradient(180deg, #100b06 0%, #0f0a06 100%);
+
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.5);
+  --shadow-card-hover: 0 8px 40px rgba(0,0,0,0.7), 0 0 0 1px rgba(212,168,67,0.25);
+  --shadow-modal: 0 20px 60px rgba(0, 0, 0, 0.8);
 }

@@ -10,6 +10,7 @@ import {
 } from 'lucide-react';
 import { logout } from '../../services/firebase';
 import { useAuth } from '../../context/AuthContext';
+import { ThemeToggle } from '../ui/ThemeToggle';
 import styles from './Sidebar.module.css';
 
 const NAV_ITEMS = [
@@ -84,10 +85,13 @@ export function Sidebar() {
             </div>
           </div>
         )}
-        <button className={styles.logoutBtn} onClick={handleLogout}>
-          <LogOut size={16} />
-          <span>Sair</span>
-        </button>
+        <div className={styles.actions}>
+          <ThemeToggle />
+          <button className={styles.logoutBtn} onClick={handleLogout}>
+            <LogOut size={16} />
+            <span>Sair</span>
+          </button>
+        </div>
       </div>
     </aside>
   );
